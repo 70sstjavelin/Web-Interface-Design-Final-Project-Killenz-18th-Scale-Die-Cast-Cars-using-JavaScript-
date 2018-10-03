@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<title>Killenz 18th Scale Die-Cast Cars</title>
+		<meta name="description" content="">
+		<meta name="author" content="Donald">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="form.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/grid.css">
+		<script src="register_library.js" type="text/javascript"></script>
+		<script src="register.js" type="text/javascript"></script> 
+	</head>
+
+	<div>
+		<h1>Killenz 18th Scale Die-Cast Cars-Customer Survey</h1>
+		<h2>Give us your feedback:</h2>
+			<form action="thanks.html" method="post" name="subForm" target="new" id="subForm">
+			<div class="class grid_5 left">
+				<fieldset>
+					<legend>Contact Information</legend>
+					<table>
+					<tr>
+						<td><input type="text" name="first_name" autofocus title="First name">
+							<label for="first_name">First Name</label>
+						</td>	
+					</tr>
+					<tr>
+						<td><input type="text" name="last_name" required title="Last name">
+							<label for="last_name">Last Name</label>
+							</td>	
+					</tr>
+					<tr>
+						<td><input type="text" name="address" required title="address">
+							<label for="address">Address</label>
+						</td>	
+					</tr>
+					<tr>
+						<td><input type="text" name="city" required title="city">
+							<label for="city">City</label>
+						</td>	
+					</tr>
+					<tr>
+						<td><input type="text" name="state" id="state" maxlength="2" required title="Use two digit state code">
+							<label for="state">State:</label>
+							<span id="state_error">Use 2 character abbreviation.</span>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="text" name="zip" id="zip" required title="zip code">
+							<label for="zip">Zip Code:</label>
+							<span id="zip_error">Use 5 or 9 digit ZIP code.</span>
+						</td>	
+					</tr>
+					<tr>
+						<td><input type="text" name="email" id="email" required title="email address">
+							<label for="email">E-Mail:</label>
+								<span id="email_error">Must be a valid email address.</span>
+						</td>	
+					</tr>
+					<tr>
+						<td><label for="phone">Phone Number:</label>
+							<input type="text" name="phone" id="phone" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Phone Number: use 999-999-9999 format">
+								<span id="phone_error">Use 999-999-9999 format.</span>
+								
+						</td>	
+					</tr>
+								
+				</table>
+				</fieldset>
+				</div>
+				<br>
+				<table>
+					<fieldset>
+					<legend>
+						Types of Model Cars Customer Collects
+					</legend>
+					</fieldset>
+					<tr>
+						<td>What kind of model cars do you collect?</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="car1" value="muscle cars" title="Muscle Cars">
+							<label for="name">Muscle cars</label>
+							
+						</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="car2" value="exotic cars" title="Exotic cars">
+							<label for="car2">Exotic cars</label>
+						</td> 
+					</tr>
+				</table>
+			    <table>
+			    	
+				  <tr>
+					<td>Select your favorite car brand from the following drop-down list:</td>
+				</tr>
+				<tr>
+					<td>
+						<select name="autoBrand" id="autoBrand" title="type of auto brand">
+							<option value="Ford">Ford</option>
+							<option value="Chevrolet">Chevrolet</option>
+							<option value="Chrysler-Dodge-Plymouth">Chrysler-Dodge-Plymouth</option>
+							<option value="Exotic Name">Exotic brands</option>
+						</select></td>
+				</tr>
+			   </table>
+			   <table>
+			   	<fieldset>
+					<legend>
+						Customer Satisfaction
+					</legend>
+					</fieldset>
+				<tr>
+					<td>How satisfied are you with the usability of our website?</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="usability" value="very_satisfied" title="very satisfied">Very satisfied!</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="usability" value="satisfied" title="satisfied">satisfied</td>
+				</tr>	
+				<tr>
+					<td><input type="radio" name="usability" value="somewhat_satisfied" title="somewhat satisfied">somewhat satisfied</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="usability" value="not_satisfied" title="not satisfied">not satisfied</td>
+				</tr>
+			
+				<tr>
+				
+					<td>How satisfied are you with the accessibility of our website?</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="accessibility" value="very_satisfied" title="Very satisfied!">Very satisfied!</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="accessibility" value="satisfied" title="satisfied">satisfied</td>
+				</tr>	
+				<tr>
+					<td><input type="radio" name="accessibility" value="somewhat_satisfied" title="somewhat satisfied">somewhat satisfied</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="accessibility" value="not_satisfied" title="not satisfied" >not satisfied</td>
+				</tr>
+			
+				<tr>				
+					<td>How satisfied are you with the navigation of our website?</td>
+				</tr>
+                <tr>
+					<td><input type="radio" name="navigation" value="very_satisfied" title="Very satisfied!">Very satisfied</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="navigation" value="satisfied" title="satisfied">satisfied</td>
+				</tr>	
+				<tr>
+					<td><input type="radio" name="navigation" value="somewhat_satisfied" title="somewhat satisfied">somewhat satisfied</td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="navigation" value="not_satisfied" title="not satisfied">not satisfied</td>
+				</tr>
+				
+			
+			
+				<tr>
+					<td>
+						<textarea name="feedback" placeholder="If you want to give feedback, please enter it here." title="list additional comments here"></textarea> 
+					</td>
+				</tr>				
+			</table>	
+			
+			<table>
+			
+				<fieldset>
+					<legend>
+						Survey Buttons: Submit or Reset Form
+					</legend>
+					<button type="submit" id="register">
+						Submit Survey
+					</button>
+					<button type="reset" id="reset_form">
+						Reset
+					</button>
+				</fieldset>
+			
+			</table>
+		</form>
+	</div>

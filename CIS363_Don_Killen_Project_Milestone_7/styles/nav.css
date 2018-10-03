@@ -1,0 +1,25 @@
+
+/* CSS Document */
+nav {
+    display: block;
+    margin-bottom: 1.5em;
+    
+}
+nav a
+{
+	margin-right: 1.25em;
+	margin-left: 1.25em; /*added 3/23*/
+	
+	
+	
+}
+nav a:hover
+{
+	background-color: red;/*not showing?*/
+}
+nav a:visited {
+	background:#D4A817;
+}
+nav a:active {
+	background:#4E387E;
+}

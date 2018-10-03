@@ -1,0 +1,129 @@
+/*CSS document: page.css*/
+body {
+	font-family:Arial, Helvetica, sans-serif;
+/*	font-size: 1 em; error per css validator*/
+	margin: 0;
+	padding: 0;
+	color: #888;
+	background-color: #ffffff;
+	border-style: solid;
+}
+/* fixed length container surounds all divs*/
+.container {
+	width: 960px;
+	border-style: double;
+	border-color: blue; /*added 3/23*/
+	margin: 0 auto;
+	float: left; 
+}
+.header {
+	text-align: center;
+	width: 100%;
+	position: relative;
+	background-color: #EEF6FA;/*3/23*/
+	border-bottom: 2em; /*added */
+	/*padding-bottom: 2px solid #ef9c00;/*added  then deleted by css validator*/
+}
+h1, h2, h3, h4 {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000060;
+	margin: .15em;
+	border-bottom: 1px dashed #999;
+	
+}
+h1 {
+	font-size: 1.5em;
+	margin-top: 0;
+}
+h2, h3 {
+	font-size 1em;
+}
+h4 {
+	margin-bottom: .75em;
+}
+.logo{
+	/*width: auto;
+	height: auto;*/
+	text-align: left;
+	border-radius: 1%;
+	float: left;
+	height: 10%;
+    width: 20%;
+}
+.logo2{
+text-align: left;
+height: 40%;
+width: 50%;		
+}
+.sidebar {
+	height: auto;
+	padding:20px;
+	float: right;
+	width: 15%;
+	background:#EEF6FA;
+	border: 5px double blue;
+	/*border-width: thin;*/
+	border-radius: 10px 20px 10px 20px;
+	box-shadow: 3px 5px 0 5px;
+	/*box-sizing: border-box; doesn't function as expected*/
+}
+.sidebarL {
+	padding:20px;
+	float: left;
+	width: 50%;
+	background:#EEF6FA;
+	border: 5px double blue;
+	/*border-width: thin;*/
+	border-radius: 10px 20px 20px 0;
+	box-shadow: 3px 5px 0 5px;
+}	
+
+#daycell {padding: 1em;  text-align:center; background-color: yellow;/*color gold gives an error*/
+          color:red; font-size:10pt; font-family: sans-serif;
+          border-bottom: 2px solid rgb(128,0,0)}	
+.content {
+	/*width: (8%);*/
+	float: right;  /* changed from left*/
+	margin-left: 1em;
+	margin-right: 1em;
+	background-color: #606060;
+	background: #EEF6FA;
+	text-indent: 2em; /*added 3/23*/
+}
+nav {
+	display:block;
+	margin-bottom: 1.5em;
+	
+}
+nav a {
+	margin-right: 1.25em;
+	display:block;
+	text-shadow: #DDD 10px 10px 2px; /*added 3/23*/
+	
+	}
+nav a:visited {
+	background: #D4A817
+	}
+nav a:active {
+	background: #4E387E;
+}	
+/* footers:
+ * 
+ */
+footer {
+	background-color: #DDDDDD;
+	color: #F36E12;
+	clear: both;
+	height: 4em;	
+}
+footer p {
+	font-size: .75em;
+	text-align: center;
+	position: relative;
+	top: 56%;
+	/* transform: translatev(-56%); error per validator*/
+	
+	
+}
+ 

@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+.inputField {
+	display: block;
+	clear: both;
+	font-size: 1em;
+}
+.floatCtrl {
+	display: inline-block;
+	float: left;
+	margin-left: 1em;
+	margin-bottom: .75em;
+}
+.floatLabel {
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 15%;
+							
+	text-align: right;
+	/* margin-right;  error per css validation*/
+	font-weight: bold;
+	font-size: 1em;
+	color: #000080;
+}
+form {
+	border: 2px solid blue;
+	padding: 1px;
+	margin: 2em;
+	background-color: yellow;
+	
+}
+h1, h2 {
+	color: #000080;
+}
+.largeTextField {
+	width: 35%;
+}
+td {
+	border: blue solid 1px;
+	text-align: left;
+}
+th.left, td.left {
+	text-align: left;
+	
+}	
+#Total {font-weight: bold; {
+}

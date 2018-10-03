@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+ Width: 1000px for content
+ # Columns : 12
+ Column width: 65px
+
+target / context = result
+
+When using grids the sum of the grid div elements cannot exceed 100%
+including the total of the margins and border.
+
+The grids do not have any borderins or internal padding, just top and bottom margins, these values are 
+set by the content placed in each grid, and the inner contain measurements
+do not affect the placement or spacing of the grid divisions.
+
+The inner content divisions add internal margins, paddings, and borders, but these measurements
+are relative to the containing grid division element so the internal measures do no affect the meansures of the page layout
+
+Each grid adds 10px or about 1% to the internal measurements but 
+the right most grid will not have any right margin.
+If you use 3 grids, there will be 20px, or 2 percent, margin space to account for
+If you use 4 grids there is be 30 px, or 2 percent, margin space to account for.
+
+
+ */
+.grid_1 { width: 6.5%; } /* 65px/1000px = 0.065px */
+.grid_2 { width: 15%; } /* 150px/1000px =  0.15px */
+.grid_3 { width: 23.5%; } /* 235px/1000px = 0.235px */
+.grid_4 { width: 32%; } /* 320px/1000px = 0.32px */
+.grid_5 { width: 40.5%; } /* 405px/1000px = 0.405px */
+.grid_6 { width: 49%; } /* 490px/1000px = 0.49px */
+.grid_7 { width: 57.5%; } /* 575px/1000px = 0.575px */
+.grid_8 { width: 66%; } /* 660px/1000px = 0.66px */
+.grid_9 { width: 74.5%; } /* 745px/1000px = 0.745px */
+.grid_10 { width: 83%; } /* 830px/1000px = 0.83px */
+.grid_11 { width: 91.5%; } /* 915px/1000px = 0.915px */
+.grid_12 { width: 100%; } /* 1000px/1000px = 1 */
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9, 
+.grid_10,
+.grid_11,
+.grid_12 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	float: left; 
+	display: inline-block;
+	box-sizing:border-box;
+	
+}
+.left { /* overrides margin for left most elements */
+	margin-left: 0;
+}  
+.right { /* overrides margin for right most elements */
+	margin-right: 0;
+} 
+.vertMiddle {
+	position: relative;
+	top: 50%;
+	transform: translateY(75%);
+}
+
+.pageContainer{  /*  sets the page width, the only absolute size in pixels */
+	width: 100%; 
+	max-width: 960px;
+	margin:auto;
+	border: 1px;
+	border-style: solid;
+	border-color: blue; /*added 3/29*/
+}
+.container { /*  outer div container, to hold grid divisions */
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	float: left;  
+	display: block;
+	box-sizing:border-box;
+}
+.content {
+	/*border: 1px solid #000080;*/
+	border-radius: 15px;
+	box-sizing: border-box;
+	background:#EEF6FA;
+	border: 5px double blue;
+	padding: 10px;
+	margin-left: 5px;
+}
+header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000080;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	clear: both;
+	background-color: #EEF6FA;/*changed 3/23*/
+}
+
+footer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: .75em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #666666;
+	margin-left: 0px;
+	padding-left: 8px;
+	border-top: 1px solid #999;
+	clear: both;
+}
+.clear { /*  prevents float drops and puts content on its own line */
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0
+}
